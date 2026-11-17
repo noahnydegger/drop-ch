@@ -104,3 +104,9 @@ slurm_logs
 **/anims
 **/animation
 **/animations
+
+# === Ignore codex agent
+AGENTS.md
+
+# === Ignore data
+drop_ch_data/
