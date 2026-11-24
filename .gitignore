@@ -79,6 +79,7 @@ desktop.ini
 htmlcov/
 .cache/
 .pytest_cache/
+.ruff_cache/
 
 # === Build artifacts ===
 build/
@@ -110,3 +111,7 @@ AGENTS.md
 
 # === Ignore data
 drop_ch_data/
+
+# Local inference results, TensorBoard logs, and partial/failed runs.
+/outputs_local/
+**/events.out.tfevents.*

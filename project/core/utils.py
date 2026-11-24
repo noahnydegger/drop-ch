@@ -39,7 +39,7 @@ def get_zarr_v3_encoding(ds: xr.Dataset, clevel: int = 3) -> dict:
                 c = 1000
             else:
                 c = len(ds[dim])
-        chunks[dim] = c
+            chunks[dim] = c
 
         encoding[var] = {
             "compressors": BloscCodec(cname="zstd", clevel=clevel, shuffle=BloscShuffle.shuffle),
